@@ -15,8 +15,8 @@ const NewYear = () => {
         <div className="ball"></div>
         <div className="body"></div>
         <div className="base">.</div>
-        <p className="p">Happy New Year!</p>
-        <p className="p">Welcome 2023!</p>
+        <p className="p">Mutlu Yıllar!</p>
+        <p className="p">Hoş Geldin 2023!</p>
       </div>
     </div>
    </header>

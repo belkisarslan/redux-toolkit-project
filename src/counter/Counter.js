@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './counterSlice'
 import '../index.css';
 import NewYear from './NewYear';
+import Header from './Header';
 
 export function Counter() {
   const count = useSelector((state) => state.counter.value)
@@ -13,8 +14,10 @@ export function Counter() {
   }
 
   return (
+    <>
+    <Header/>
     <div className='main'>
-      <div className='container'>
+     <div className='container'>
       <button className='btn'
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}>
@@ -32,5 +35,6 @@ export function Counter() {
         </button>
       </div>
     </div>
+    </>
   )
 }
