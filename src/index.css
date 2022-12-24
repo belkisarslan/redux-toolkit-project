@@ -1,13 +1,29 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: url(https://picsum.photos/id/724/1370/800) no-repeat;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  margin: 100px auto;
+}
+.btn{
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 12px 20px 0 #f43b47, 0 6px 12px 0 #96e6a1;
+  opacity: 0.7;
+  background-color: transparent;
+  color: #fff;
+}
+.btn:hover{
+  opacity: 1;
+}
+.span{
+  font-size: 80px;
+  margin: 40px;
+  color: white;
 }
