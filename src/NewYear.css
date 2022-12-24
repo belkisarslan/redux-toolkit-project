@@ -1,0 +1,88 @@
+header{
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.snow, .snow2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://i.ibb.co/4fN5F8w/snow.png);
+    background-position: 0 0;
+}
+.snow{
+    background-size: 70em;
+    animation: snowfall 30s linear infinite;
+}
+
+.snow2{
+    background-size: 50em;
+    animation: snowfall2 30s linear infinite;
+    opacity: 0.5;
+}
+@keyframes snowfall{
+    100%{
+        background-position: 70em 70em;
+    }
+}
+@keyframes snowfall2 {
+    100%{
+        background-position: 50em 0em;
+    }
+}
+.containerNewyear{
+    width: 300px;
+    height: 330px;
+    border-radius: 8px;
+}
+p{
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
+    border-radius: 8px;
+    width: 170px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+.hat{
+    width:12.5rem;
+    margin: 2rem auto 1rem;
+    position:relative;
+    transform:scale(1.5);
+  }
+  .base {
+    border-radius: 2rem;
+    color:#f6f6f6; 
+    width:8.8rem;
+    position: relative;
+    left:1rem;
+    z-index:-1;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
+  }
+  .body{
+    position: relative;
+    left: 1.75rem;
+    width:7.43rem;
+    height: 5.6rem;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    border-radius: 300% 0% 0%;
+    z-index:-3;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
+    opacity: 0.7;
+  }
+  .ball{
+    width:2rem;
+    height:2rem;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    border-radius:50%;
+    position:relative;
+    left:69%;
+    top:1rem;
+    z-index:-1;
+    box-shadow: 0 12px 20px 0 #dfe9f3, 0 6px 12px 0 white;
+  }
